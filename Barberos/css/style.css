@@ -20,7 +20,7 @@ html{
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url();
+    background-image: linear-gradient(green,khaki), url();
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,8 +101,7 @@ header{
     border: 1px solid  #3bcb83;
 }
 .login i{
-    margin-left: 1rem;
-}
+    margin-left: 1rem;}
 
 /* main */
 
@@ -173,15 +172,6 @@ main h1 span{
     font-size: 1.4rem;
     cursor: pointer;
     transition: .2s ease-in-out;
-}
-.tags h4:hover{
-    
-    background-color: #3bcb83;
-    border-color:#3bcb83;
-}
-.tags h4.active{
-    background-color: #3bcb83;
-    border-color:#3bcb83;
 }
 
 /* gallery css  */
@@ -290,7 +280,7 @@ main h1 span{
 /* cutters css  */
 
 .cutters_flex{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

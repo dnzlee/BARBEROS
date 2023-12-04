@@ -12,3 +12,11 @@ menubar.addEventListener("click", () => {
     icon.classList.replace("fa-times", "fa-bars");
   }
 });
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
