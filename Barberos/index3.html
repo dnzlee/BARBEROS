@@ -7,20 +7,30 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      overflow: hidden; /* Prevent scrolling on smaller screens */
+    }
+
+    #background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
     }
 
     .form-container {
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form container */
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
     label {
@@ -50,6 +60,11 @@
   </style>
 </head>
 <body>
+  <video autoplay loop muted playsinline id="background-video">
+    <source src="bgvideoo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
   <div class="form-container">
     <h2>Registration Form</h2>
     <form action="#" method="post">
@@ -62,10 +77,11 @@
       <label for="cellphone">Cellphone No.:</label>
       <input type="tel" id="cellphone" name="cellphone" required>
 
-      <button type="submit"><a href="login.html">Register</button>
+      <button type="submit">Register</button>
     </form>
 
     <p>Already have an account? <a href="#">Login</a></p>
   </div>
 </body>
 </html>
+
